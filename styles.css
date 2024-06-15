@@ -1,0 +1,41 @@
+.btn-1 {
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.btn-1::before,
+.btn-1::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.btn-1::after {
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+}
+
+.btn-1:hover:after {
+    background: #db8888;
+    height: 100%;
+    width: 135%;
+}
+.img-1:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in;
+}
+
+.img-holder-1 {
+    background: #db8888;
+}
+
+.nav-link {
+    color: #db8888;
+}
